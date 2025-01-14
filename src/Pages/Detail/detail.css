@@ -1,0 +1,223 @@
+/* Navbar Styles */
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo .navbar-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.container{
+  padding: 30px;
+}
+
+/* Full Banner */
+.movie-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.movie-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3), transparent);
+}
+
+/* Movie Info Section */
+.movie-info-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: -110px auto 20px;
+  padding: 0 20px;
+  z-index: 10;
+  position: relative;
+}
+
+.movie-poster img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details {
+  flex: 1;
+}
+
+.movie-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color : white
+}
+
+.movie-details p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.genres span {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Carousel Wrappers */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.trailers-carousel,
+.recommendations-carousel {
+  margin-bottom: 60px;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.trailer-card,
+.recommendation-card {
+  flex: 0 0 auto;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Cast Section */
+.credits-carousel {
+  margin-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+}
+
+.credit-card {
+  flex: 0 0 auto;
+  text-align: center;
+  background: transparent; /* Suppression du fond si aucune image */
+  border-radius: 50%; /* Cercle */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.credit-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garde le ratio */
+  object-position: center 30%; /* Ajuste la position pour centrer la tête */
+  border-radius: 10%; /* Cercle parfait */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.credit-card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.credit-card .character {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+/* Footer Styles */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+body.dark-mode .footer {
+  background: #1e1e1e;
+  color: #ccc; /* Texte du footer en mode sombre */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+

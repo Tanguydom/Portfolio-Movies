@@ -1,0 +1,181 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo .navbar-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  padding: 100px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.carousel {
+  margin-bottom: 50px;
+  overflow-x: auto; 
+  display: flex;
+  align-items: center;
+  scroll-behavior: smooth; 
+  padding-bottom: 10px;
+}
+
+
+.carousel-track {
+  display: flex;
+  gap: 20px; 
+  cursor: grab;
+}
+
+.movie-card {
+  min-width: 150px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster img {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.movie-info {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.movie-info h4 {
+  font-size: 1rem;
+  color: #222;
+  margin: 5px 0;
+}
+
+.movie-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode h3 {
+  color: #f5f5f5;
+}
+
+body.dark-mode .navbar {
+  background: rgba(18, 18, 18, 0.85);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar-title {
+  color: #f5f5f5;
+}
+
+body.dark-mode .movie-card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .movie-info h4 {
+  color: #fff; /* Titre des cartes en mode sombre */
+}
+
+body.dark-mode .movie-info p {
+  color: #ccc; /* Texte des détails des cartes */
+}
+
+/* Footer Styles */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+body.dark-mode .footer {
+  background: #1e1e1e;
+  color: #ccc; /* Texte du footer en mode sombre */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

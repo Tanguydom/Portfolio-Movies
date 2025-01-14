@@ -1,0 +1,39 @@
+# Node.js / NPM
+node_modules/
+package-lock.json
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build
+dist/
+build/
+.next/
+out/
+
+# Cache & Miscellaneous
+.cache/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+.idea/
+*.iml
+
+# Coverage & Tests
+coverage/
+jest-coverage/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# OS & IDE Specific
+*.sublime-workspace
+*.sublime-project
+Thumbs.db

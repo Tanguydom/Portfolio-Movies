@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Detail</title>
+  <link rel="stylesheet" href="detail.css">
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Left Side: Logo -->
+      <a href="/" class="navbar-logo">
+        <img src="/src/assets/images/icon.svg" alt="application-icon" class="navbar-icon">
+      </a>
+
+      <!-- Center: Title -->
+      <h3 class="navbar-title">Second Project</h3>
+
+      <!-- Right Side: Search and Dark Mode -->
+      <div class="navbar-actions">     
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="dark-mode-btn">
+          <img src="/src/assets/images/moon.png" alt="Dark Mode" class="icon" id="darkModeIcon">
+        </button>        
+      </div>
+    </div>
+  </nav>
+
+    <div class="movie-banner">
+        <div class="movie-banner-overlay"></div>
+        <img
+          id="banner-image"
+          src=""
+          alt="Movie Banner"
+        />
+      </div>
+      <div class="movie-info-container">
+        <div class="movie-poster">
+          <img
+            id="poster-image"
+            src=""
+            alt="Movie Poster"
+          />
+        </div>
+        <div class="movie-details">
+          <h1 id="movie-title"></h1>
+          <p id="movie-year-language"></p>
+          <div id="movie-genres" class="genres"></div>
+          <p id="movie-overview"></p>
+        </div>
+      </div>
+      <div class="container">
+        <div id="movie-credits"></div>
+        <div id="movie-trailers"></div>
+        <div id="movie-recommendations"></div>
+      </div>
+  
+
+  <footer class="footer">
+    <p>&copy; Movie App. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="./detail.js"></script>
+  <script src="/darkmode.js"></script>
+
+</body>
+</html>

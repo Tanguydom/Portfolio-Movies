@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie app</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="navbar-logo">
+        <img src="./src/assets/images/icon.svg" alt="application-icon" class="navbar-icon">
+      </a>
+      <h3 class="navbar-title">Second Project</h3>
+      <div class="navbar-actions">     
+        <button id="darkModeToggle" class="dark-mode-btn">
+          <img src="./src/assets/images/moon.png" alt="Dark Mode" class="icon" id="darkModeIcon">
+        </button>        
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="trending-section" class="movie-section">
+      <h3>Trending This Week</h3>
+      <div id="trending-carousel" class="carousel">
+        <div id="trending-movies" class="carousel-track">
+        </div>
+      </div>
+    </section>
+      <section id="popular-section" class="movie-section">
+      <h3>Popular Movies</h3>
+      <div id="popular-carousel" class="carousel">
+        <div id="popular-movies" class="carousel-track">
+        </div>
+      </div>
+    </section>
+      <section id="upcoming-section" class="movie-section">
+      <h3>Upcoming Movies</h3>
+      <div id="upcoming-carousel" class="carousel">
+        <div id="upcoming-movies" class="carousel-track">
+        </div>
+      </div>
+    </section>
+  </div>
+    <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; Movie app. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/Pages/Trending/trending.js"></script>
+  <script type="module" src="./src/Pages/Popular/popular.js"></script>
+  <script type="module" src="./src/Pages/Upcoming/upcoming.js"></script>
+  <script src="darkmode.js"></script>
+  <script src="./src/Pages/Detail/detail.js"></script>
+</body>
+</html>

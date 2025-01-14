@@ -1,0 +1,39 @@
+﻿<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 120 120"
+        fill="none"
+        width="120"
+        height="120"
+>
+  <!-- Camera body -->
+  <rect x="20" y="40" width="80" height="40" rx="5" fill="#F0A500" />
+
+  <!-- Camera lens -->
+  <circle cx="80" cy="60" r="15" fill="#4A90E2" />
+  <circle cx="80" cy="60" r="10" fill="#FFFFFF" />
+  <circle cx="80" cy="60" r="5" fill="#4A90E2" />
+
+  <!-- Film reels -->
+  <circle cx="35" cy="35" r="12" fill="#F76E11" />
+  <circle cx="35" cy="35" r="6" fill="#FFFFFF" />
+
+  <circle cx="65" cy="35" r="12" fill="#F76E11" />
+  <circle cx="65" cy="35" r="6" fill="#FFFFFF" />
+
+  <!-- Film strip -->
+  <rect x="10" y="45" width="100" height="10" fill="#4CAF50" />
+  <rect x="15" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="25" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="35" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="45" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="55" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="65" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="75" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="85" y="47" width="5" height="6" fill="#FFFFFF" />
+  <rect x="95" y="47" width="5" height="6" fill="#FFFFFF" />
+
+  <!-- Tripod -->
+  <line x1="40" y1="80" x2="30" y2="110" stroke="#333333" stroke-width="3" />
+  <line x1="80" y1="80" x2="90" y2="110" stroke="#333333" stroke-width="3" />
+  <line x1="60" y1="80" x2="60" y2="110" stroke="#333333" stroke-width="3" />
+</svg>
