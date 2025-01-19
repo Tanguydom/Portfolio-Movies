@@ -5,8 +5,8 @@ function toggleDarkMode() {
   const isDarkMode = body.classList.toggle('dark-mode'); // Ajoute/enlève la classe "dark-mode"
 
   darkModeIcon.src = isDarkMode
-    ? '/src/assets/images/moon.png' // Icône lune pour le mode sombre
-    : '/src/assets/images/sunny.png'; // Icône soleil pour le mode clair
+    ? 'src/assets/images/moon.png' // Icône lune pour le mode sombre
+    : 'src/assets/images/sunny.png'; // Icône soleil pour le mode clair
 
   // Sauvegarde la préférence utilisateur dans localStorage
   localStorage.setItem('darkMode', isDarkMode);
@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const darkModePreference = localStorage.getItem('darkMode') === 'true';
   if (darkModePreference) {
     document.body.classList.add('dark-mode');
-    document.getElementById('darkModeIcon').src = '/src/assets/images/moon.png';
+    document.getElementById('darkModeIcon').src = 'src/assets/images/moon.png';
   } else {
-    document.getElementById('darkModeIcon').src = '/src/assets/images/sunny.png';
+    document.getElementById('darkModeIcon').src = 'src/assets/images/sunny.png';
   }
 
   // Ajoute l'événement au bouton de basculement

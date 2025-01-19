@@ -1,6 +1,6 @@
 
 const api = {
-  baseURL: 'http://localhost:8080', // URL de base pour l'API
+  baseURL: 'http://tanguy-domergue.fr/movies-api/movies', // URL de base pour l'API
 
   // Méthode GET
   get: async (endpoint, params = {}) => {
